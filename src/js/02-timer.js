@@ -78,6 +78,10 @@ function timeForTimer() {
         refs.startBtn.disabled = true;
         refs.calendar.disabled = false;
         isActiv = false;
+        refs.days.textContent = '00';
+        refs.hours.textContent = '00';
+        refs.minutes.textContent = '00';
+        refs.seconds.textContent = '00';
         return;
       },
       {
