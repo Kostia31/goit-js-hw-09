@@ -52,8 +52,6 @@ function timeForTimer() {
     refs.minutes.textContent = minutes;
     refs.seconds.textContent = seconds;
 
-    console.log(resultTimer);
-
     if (
       days === '00' &&
       hours === '00' &&
