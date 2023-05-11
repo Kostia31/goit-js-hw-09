@@ -20,7 +20,7 @@ const options = {
   defaultDate: new Date(),
   minuteIncrement: 1,
   onClose(selectedDates) {
-    parseDate = Date.parse(selectedDates[0]);
+   const parseDate = Date.parse(selectedDates[0]);
     if (parseDate <= Date.now()) {
       Notiflix.Notify.failure('Please choose a date in the future');
       return;
