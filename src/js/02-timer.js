@@ -88,7 +88,7 @@ function timeForTimer() {
         // etc...
       }
     );
-  }, 500);
+  }, 3000);
 }
 
 function convertMs(ms) {
