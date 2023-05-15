@@ -13,9 +13,14 @@ function getInputValue(e) {
   });
   const { delay, step, amount } = result;
   let steps = Number(delay);
+  let position = 0
   for (let i = 0; i < amount; i += 1) {
-    steps += Number(step);
-    createPromise(amount, steps)
+    position += 1
+    if (i) {
+      steps += Number(step);
+    }
+    
+    createPromise(position, steps)
       .then(({ position, delay }) => {
         Notiflix.Notify.success(
           `✅ Fulfilled promise ${position} in ${delay}ms`
